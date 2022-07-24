@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Lato:wght@100;300&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.display{
+    width: 100%;
+    height: 100vh;
+    min-width: 375px;
+    background-color: #F3EAE3;
+    padding: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.product--img{
+    width: 343px;
+    min-height: 240px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+}
+.product{
+    width: 343px;
+}
+.product--details{
+    background-color: #fff;
+    padding: 16px 32px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.product--category{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #787880;
+    margin-bottom: 15px;
+}
+
+.product--title{
+    margin-bottom: 15px;
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 28px;
+    color: #21262A;
+}
+.product--desc{
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #787880;
+}
+.product--prizes{
+    margin-bottom: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.product--actual-prize{
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: #3C8067;
+    margin-right: 30px;
+    font-weight: 800;
+}
+.product--main-prize{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #787880;
+    text-decoration: line-through;
+}
+.product--btn{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3C8067;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+.product--btn:hover{
+    background-color: #1A4031;
+}
+
+/* 
+Desktop View */
+@media (min-width:660px) and (max-width:1440px) {
+    .product{
+        display: flex;
+        min-height: 445px;
+        min-width: 610px;
+    }
+
+    .product--details{
+        background-color: #fff;
+        padding: 40px 32px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        max-width: 305px;
+    
+    }
+
+    .product--category{
+        margin-bottom: 35px;
+    }
+
+    .product--img{
+        background-image: url(./images/image-product-desktop.jpg);
+        min-width: 305px;
+        border-top-left-radius:10px;
+        border-top-right-radius:0;
+        border-bottom-left-radius:10px;
+        background-size: cover;
+    }
+    .product--title{
+        margin-bottom: 35px;
+        line-height: 35px;
+    }
+    .product--desc{
+        margin-bottom: 35px;
+        line-height: 20px;
+    }
+    .product--prizes{
+        margin-bottom: 35px;
+    }
+}
